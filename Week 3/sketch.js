@@ -143,7 +143,7 @@ function draw() {
   player1 = "#d52121"
   player2 = "#0b07ff"
 
-  
+
 
 
   win()
@@ -154,16 +154,16 @@ function showResetButton() {
   if (gameOver == true) {
     fill("#5a5757")
     rect(200, 540, 180, 50);
-    fill ("#cfcfcf")
-    textSize (25)
-    text ("Reset Game",220, 570)
+    fill("#cfcfcf")
+    textSize(25)
+    text("Reset Game", 220, 570)
   }
-  if (tie == true){
+  if (tie == true) {
     fill("#5a5757")
     rect(200, 540, 180, 50);
-    fill ("#cfcfcf")
-    textSize (25)
-    text ("Reset Game",220, 570)
+    fill("#cfcfcf")
+    textSize(25)
+    text("Reset Game", 220, 570)
   }
 }
 
@@ -178,7 +178,7 @@ function mouseClicked() {
     }
     return;
   }
-  if (tie == true){
+  if (tie == true) {
     if (mouseX > 220 && mouseX < 400) {
       if (mouseY > 540 && mouseY < 590) {
 
@@ -388,14 +388,14 @@ function win() {
     gameOver = true
   }
 
-  if (vak1 != 0 && vak2 != 0 && vak3 != 0 && vak4 != 0 && vak5 != 0 && vak6 != 0 && vak7 != 0 && vak8 != 0 && vak9 != 0 && player1 != true && player2 != true){
+  if (vak1 != 0 && vak2 != 0 && vak3 != 0 && vak4 != 0 && vak5 != 0 && vak6 != 0 && vak7 != 0 && vak8 != 0 && vak9 != 0 && player1 != true && player2 != true) {
     fill("#938f8f")
     textSize(60)
     text("tie", 280, 300)
     tie = true
   }
-  
-  }
+
+}
 
 function GameReset() {
   vak1 = 0
